@@ -1,3 +1,3 @@
 A Simple TikTakToe Game  
 Sample Screen  
-![](https://github.com/samkhannaind/TikTakToe/blob/master/help_ttt.png =1080x2160)
+<img src="https://github.com/samkhannaind/TikTakToe/blob/master/help_ttt.png" width="200" height="400" >
