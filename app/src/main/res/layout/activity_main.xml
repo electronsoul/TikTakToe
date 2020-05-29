@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_act"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/valley_back"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="343dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97">
+
+        <LinearLayout
+            android:id="@+id/banner_1"
+            android:layout_width="165dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/banner"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/head_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:background="#00000000"
+                android:paddingLeft="35dp"
+                android:text="@string/player_1_score"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/score_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="50dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:text="@string/Null_1"
+                android:textColor="#F44336"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/banner_2"
+            android:layout_width="184dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/banner"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/head_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:background="#00000000"
+                android:paddingLeft="40dp"
+                android:text="@string/player_2_score"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/score_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginBottom="40dp"
+                android:background="#00000000"
+                android:text="@string/Null_2"
+                android:textColor="#F44336"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/play_area"
+        android:layout_width="371dp"
+        android:layout_height="374dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@drawable/board_1"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.076"
+        app:rowCount="3">
+
+        <ImageView
+            android:id="@+id/i1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="drop"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/i0"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="drop"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/i2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="328dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="drop"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/i3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="135dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="drop"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/i4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="135dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="drop"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/i5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="135dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="drop"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/i6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="255dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="drop"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/i7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="255dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="drop"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/i8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="255dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="drop"
+            app:layout_column="2"
+            app:layout_row="0" />
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

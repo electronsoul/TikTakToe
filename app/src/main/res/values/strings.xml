@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tik Tak Toe</string>
+    <string name="restart">Restart</string>
+    <string name="start">Start</string>
+    <string name="todo">TODO</string>
+    <string name="player_2_score">Cross</string>
+    <string name="player_1_score">Circle</string>
+    <string name="Null_1" translatable="false"></string>
+    <string name="Null_2" translatable="false"></string>
+    <string name="score_won">Won</string>
+    <string name="score_loss">Lost</string>
+</resources>
